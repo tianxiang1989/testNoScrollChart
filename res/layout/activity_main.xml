@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- android:background="#ffffbb33" -->
+
+    <RelativeLayout
+        android:id="@+id/ll_barchart_out"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="#ffffbb33"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <view
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            class="test.testNoScrollChart.noScrollBarChart" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_barchart_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_barchart_out"
+        android:background="@android:color/darker_gray" >
+
+        <TextView
+            android:id="@+id/tv_summary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这些东西是下面的" />
+
+        <Button
+            android:id="@+id/btn_change_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_summary_text"
+            android:text="点击切换view"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>
